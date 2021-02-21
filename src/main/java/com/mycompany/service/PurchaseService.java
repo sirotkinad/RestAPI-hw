@@ -62,4 +62,12 @@ public class PurchaseService {
         return repository.findUniqueMonths();
     }
 
+    public List<Object[]> getCustomerAndShopName(){
+        return repository.getCustomerAndShopName();
+    }
+
+    public List<Object[]> getPurchaseDetails(){
+        return repository.getPurchaseDetails();
+    }
+
 }

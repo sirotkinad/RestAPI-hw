@@ -83,6 +83,15 @@ public class PurchaseController {
         return service.findUniquePurchaseMonths();
     }
 
+    @GetMapping("/purchase/info")
+    public List<Object[]> getCustomerAndShopName(){
+        return service.getCustomerAndShopName();
+    }
+
+    @GetMapping("/purchase/details")
+    public List<Object[]> getPurchaseDetails(){
+        return service.getPurchaseDetails();
+    }
 
     public Map<String, Boolean> giveResponse(String message, Boolean result){
         Map<String, Boolean> response = new HashMap();
